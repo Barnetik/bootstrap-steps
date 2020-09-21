@@ -13,6 +13,7 @@
   display: flex;
   overflow-x: auto;
 
+
   .step {
     &:first-child {
       margin-left: auto;
@@ -60,6 +61,8 @@
   border: $step-circle-border-width solid $step-default-circle-border-color;
   border-radius: 100%;
   background-color: $step-default-circle-bg-color;
+  font-size: $step-circle-font-size;
+  font-weight: $step-circle-font-weight;
 
   &::before {
     content: '';
@@ -70,8 +73,8 @@
     width: calc(#{$step-content-width} + #{$step-gutter} - #{$step-circle-size});
     height: $step-circle-border-width;
     transform: translate(-100%, -50%);
-    color: $step-default-circle-border-color;
-    background-color: currentColor;
+    color: $step-default-circle-color;
+    background-color: $step-line-color;
   }
 }
 
@@ -79,6 +82,8 @@
   color: $step-default-text-color;
   word-break: break-all;
   margin-top: 0.25em;
+  font-size: $step-text-font-size;
+  font-weight: $step-text-font-weight;
 }
 
 .step-active {
@@ -86,12 +91,14 @@
     color: $step-active-circle-color;
     background-color: $step-active-circle-bg-color;
     border-color: $step-active-circle-border-color;
+
     &::before {
       color: $step-active-circle-border-color;
     }
   }
   .step-text {
     color: $step-active-text-color;
+    font-weight: $step-active-text-font-weight;
   }
 }
 
