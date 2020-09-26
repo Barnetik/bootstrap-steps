@@ -50,7 +50,7 @@
   padding-right: $step-gutter;
 }
 
-.step-circle, .step-small-circle {
+.step-circle {
   position: relative;
   display: flex;
   justify-content: center;
@@ -79,7 +79,7 @@
   }
 }
 
-.step-small-circle {
+.small-circle {
     margin-top: $step-circle-size / 4;
     width: $step-circle-size / 2;
     height: $step-circle-size / 2;
