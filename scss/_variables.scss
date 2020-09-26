@@ -6,6 +6,13 @@ $step-content-padding-top: .5rem !default;
 $step-circle-size: 1.5rem !default;
 $step-circle-border-width: 2px !default;
 
+$step-circle-font-size: auto !default;
+$step-circle-font-weight: normal !default;
+$step-text-font-size: auto !default;
+$step-text-align: inherit !default;
+$step-text-font-weight: normal !default;
+$step-text-word-break: break-all !default;
+
 $step-default-circle-color: $gray-500 !default;
 $step-default-circle-bg-color: $white !default;
 $step-default-circle-border-color: $gray-500 !default;
@@ -15,6 +22,7 @@ $step-active-circle-color: $white !default;
 $step-active-circle-bg-color: $primary !default;
 $step-active-circle-border-color: $primary !default;
 $step-active-text-color: $primary !default;
+$step-active-text-font-weight: $step-text-font-weight !default;
 
 $step-error-circle-color: $white !default;
 $step-error-circle-bg-color: $danger !default;
@@ -25,3 +33,5 @@ $step-success-circle-color: $success !default;
 $step-success-circle-bg-color: $white !default;
 $step-success-circle-border-color: $success !default;
 $step-success-text-color: $success !default;
+
+$step-line-color: $step-default-circle-border-color !default;
